@@ -1,3 +1,11 @@
+/*
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    direction: rtl;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
@@ -9,29 +17,52 @@ body {
     background-color: beige;
 }
 
-.circle {
+/* .container-all {
+    width: 62.5em;
+    height: 22em;
+    top: 9em;
     display: flex;
     position: relative;
-    font-weight: bold;
-    width: 14em;
-    height: 14em;
-    border-radius: 50%;
-    border: solid;
-    top: 4em;
-    left: 12em;
+    justify-content: center;
+    align-items: center;
+    border: solid black;
+} */
+.container-all {
+    max-width: 62.5em;
+    margin: auto;
+    margin-top: 6.25em;
+    /* background-color: red; */
 }
 
-.positionRelative {
+.container-box {
+    display: flex;
     height: 4em;
     width: 4em;
-    position: relative;
+    justify-content: center;
     left: 5em;
     top: 6em;
 }
-/*
-.navbar-collapse {
-    flex-basis: 100%;
-    flex-grow: 1;
-    align-items: center;
-    direction: rtl;
-} */
+
+.container-box .link {
+    text-decoration: none;
+    color: black;
+}
+
+.box {
+    width: 62em;
+    height: 20em;
+    padding: 1.2em;
+    margin: 1.25em;
+    background-color: #fff;
+    text-align: center;
+    left: 2em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.box:hover {
+    transform: translate(4em, -4em);
+    box-shadow: -62.25em 62.25em 1.25em -62.25em rgba(57, 52, 52, 0.845);
+}
