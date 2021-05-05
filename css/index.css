@@ -52,6 +52,7 @@ body {
     margin: 1.25em;
     background-color: #fff;
     text-align: center;
+    top: 8em;
     left: 2em;
     position: relative;
     overflow: hidden;
@@ -60,7 +61,7 @@ body {
 }
 
 .box:hover {
-    transform: translate(4em, -4em);
+    transform: translate(0em, -4em);
     box-shadow: -62.25em 62.25em 1.25em -62.25em rgba(57, 52, 52, 0.845);
 }
 
