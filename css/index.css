@@ -1,0 +1,37 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: beige;
+}
+
+.circle {
+    display: flex;
+    position: relative;
+    font-weight: bold;
+    width: 14em;
+    height: 14em;
+    border-radius: 50%;
+    border: solid;
+    top: 4em;
+    left: 12em;
+}
+
+.positionRelative {
+    height: 4em;
+    width: 4em;
+    position: relative;
+    left: 5em;
+    top: 6em;
+}
+/*
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    direction: rtl;
+} */
