@@ -11,6 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
 }
 
 body {
@@ -36,11 +37,7 @@ body {
 
 .container-box {
     display: flex;
-    height: 4em;
-    width: 4em;
     justify-content: center;
-    left: 5em;
-    top: 6em;
 }
 
 .container-box .link {
@@ -49,8 +46,8 @@ body {
 }
 
 .box {
-    width: 62em;
-    height: 20em;
+    width: 47em;
+    height: 22em;
     padding: 1.2em;
     margin: 1.25em;
     background-color: #fff;
@@ -65,4 +62,12 @@ body {
 .box:hover {
     transform: translate(4em, -4em);
     box-shadow: -62.25em 62.25em 1.25em -62.25em rgba(57, 52, 52, 0.845);
+}
+
+.box .icon,
+.box h4,
+.box p {
+    position: relative;
+    z-index: 1;
+    transition: all 200ms;
 }
