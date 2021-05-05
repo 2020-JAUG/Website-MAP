@@ -70,5 +70,64 @@ body {
 .box p {
     position: relative;
     z-index: 1;
-    transition: all 200ms;
+    transition: all 550ms;
+}
+
+.box .icon {
+    font-size: 2.5em;
+    top: 1em;
+    color: rgb(24, 62, 94);
+    transform: translateY(0.6em);
+}
+
+.box:hover .icon {
+    color: white;
+    font-size: 1.86em;
+    transform: translateY(0em);
+}
+
+.box h4,
+.box p {
+    margin-top: 2.5em;
+}
+
+.box h4 {
+    font-size: 1.87em;
+    transform: translateY(0.6em);
+}
+
+.box:hover h4 {
+    transform: translateY(0em);
+    color: #fff;
+}
+
+.box p {
+    font-size: 0.97em;
+    transform: translateY(6.25em);
+    opacity: 0;
+}
+
+.box:hover p {
+    transform: translateY(0em);
+    opacity: 1;
+    color: #fff;
+}
+
+.box .background-hover {
+    width: 7.25em;
+    height: 7.25em;
+    position: absolute;
+    background-color: rgba(230, 99, 52, 0.797);
+    top: 29.6em;
+    left: -9em;
+    border-radius: 100%;
+    transition: all 300ms;
+    background: linear-gradient(to bottom, rgba(228, 131, 51, 0.892), rgba(235, 143, 46, 0.879));
+}
+
+.box:hover .background-hover {
+    width: 67em;
+    height: 67em;
+    top: -9.80em;
+    left: -9.80em;
 }
