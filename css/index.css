@@ -1,10 +1,4 @@
-/*
-.navbar-collapse {
-    flex-basis: 100%;
-    flex-grow: 1;
-    align-items: center;
-    direction: rtl;
-} */
+
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
@@ -23,31 +17,54 @@ body {
     position: relative;
     height: 1em;
 }
-/* .container-all {
-    width: 62.5em;
-    height: 22em;
-    top: 9em;
-    display: flex;
+
+.container {
+    margin: auto;
+    display: table;
+    width: 100%;
+}
+
+h1 {
+    float: left;
+    color: #1f2021e3;
     position: relative;
-    justify-content: center;
-    align-items: center;
-    border: solid black;
-} */
+    font-size: 2.5em;
+}
+
+h1 span {
+    position: absolute;
+    right: 0em;
+    width: 0em;
+    background-color: rgb(165, 165, 165);
+    border-left: 0.0625em solid rgba(0, 0, 0, 0.096);
+    animation: machine 6s alternate steps(32);
+    /* animation: maquina 6s infinite alternate steps(32); */
+}
+
+@keyframes machine {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
+
 .container-all {
     /* max-width: 82.5em; */
-    width: 21em;
     margin: auto;
     margin-top: 6.25em;
     /* border: solid black; */
-    width: 90vw;
+    width: 98vw;
 }
 
 .container-box {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    /* background-color: red; */
+    /* background-color: rgb(172, 156, 156); */
     justify-content: center;
+    /* height: 23em; */
 }
 
 .container-box .link {
@@ -89,7 +106,7 @@ body {
     font-size: 2.5em;
     top: 0em;
     left: 4.5em;
-    color: rgb(24, 62, 94);
+    color: rgb(35, 39, 43);
     transform: translateY(0.6em);
 }
 
@@ -98,6 +115,10 @@ body {
     font-size: 1.98em;
     left: 2.8em;
     transform: translateY(0em);
+}
+
+.icon-nav:hover {
+  transform: translateY(0.3em);
 }
 
 .box h4,
@@ -152,6 +173,64 @@ body {
 }
 
 
+@media screen and (min-width: 39.5em) {
+
+    .box1 {
+      font-size: 1em;
+      margin-top: none;
+      position: relative;
+      background-color: #455f74c2;
+      display: flex;
+      z-index: 1;
+      top: -1.5em;
+      width: 27em;
+      left: -6.5em;
+    }
+    div.box2 {
+      font-size: 1em;
+      margin-top: none;
+      position: relative;
+      display: flex;
+      background-color: #455f74c2;
+      width: 27em;
+      top: -2em;
+      z-index: 1;
+      left: -12em;
+    }
+    .box:hover p {
+      transform: translateY(7.24em);
+      opacity: 1;
+      color: #fff;
+      right: 10em;
+  }
+    .box3 {
+      font-size: 1em;
+      margin-top: none;
+      position: relative;
+      display: flex;
+      background-color: #455f74c2;
+      z-index: 1;
+      left: 21em;
+      width: 27em;
+      top: -26em;
+    }
+    body {
+      overflow-y:hidden;
+    }
+    h1 {
+      left: 9em;
+      top: -1.5em;
+    }
+    .box h4 {
+      font-size: 1.87em;
+      transform: translateY(0.6em);
+      top: 1em;
+      right: -2em;
+  }
+}
+
+
+
 
 .navbar {
     background-color: #5e6b7a;
@@ -174,13 +253,13 @@ body {
     color: #c8c3ce;
   }
   .navbar .navbar-nav .nav-link {
-    color: #ffffff;
+    color: rgba(2, 2, 2, 0.831);
     border-radius: .25rem;
     margin: 0 0.25em;
   }
   .navbar .navbar-nav .nav-link:not(.disabled):hover,
   .navbar .navbar-nav .nav-link:not(.disabled):focus {
-    color: #c8c3ce;
+    color: rgba(228, 131, 51, 0.892);
   }
   .navbar .navbar-nav .dropdown-menu {
     background-color: #5e6b7a;
