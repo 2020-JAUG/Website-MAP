@@ -8,6 +8,10 @@
     font-family: 'Heebo', sans-serif;
 }
 
+.icon-nav:hover {
+  transform: translateY(0.3em);
+}
+
 @media screen and (max-width: 1768px) {
 
     * {
@@ -41,6 +45,9 @@
     .content {
         margin-top: 4em;
     }
+    .icon-nav:hover {
+      transform: translateY(0.3em);
+  }
 }
 
 .navbar {
