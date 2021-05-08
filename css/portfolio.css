@@ -1,24 +1,20 @@
 
-
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Heebo', sans-serif;
-}
-
 body {
-    background-color: rgba(65, 53, 53, 0.447);
+  background-color: rgba(65, 53, 53, 0.447);
 }
 
 .content-all {
-    perspective: 62.5em;
-    margin: auto;
-    width: 20em;
-    position: relative;
-    margin-top: 6.12em;
+  width: 12em;
+  height: 33em;
+  perspective: 62.5em;
+  margin: auto;
+  position: relative;
+  margin-top: 7.12em;
+  left: 1em;
+}
+
+.icon-nav:hover {
+  transform: translateY(0.3em);
 }
 
 .content-carousel {
@@ -30,25 +26,127 @@ body {
 }
 
 .content-carousel:hover {
+  /* animation-direction: reverse; */
   animation-play-state: paused;
 }
 
 .content-carousel figure {
-  width: 80vw;
-  height: 6.2em;
+  /* top: 9em; */
+  width: 100%;
+  height: auto;
   overflow: hidden;
   position: absolute;
   box-shadow: 0em 0em 1.25em 0em black;
-  transition: all 200ms;
+  transition: all 300ms;
 }
 
+.content-carousel figure:hover {
+  box-shadow: 0em 0em 0em black;
+  transition: all 300ms;
+}
+
+.content-carousel figure:nth-child(1) { transform: rotateY(0deg) translate(4.5em); }
+.content-carousel figure:nth-child(2) { transform: rotateY(40deg) translate(4.5em); }
+.content-carousel figure:nth-child(3) { transform: rotateY(80deg) translate(4.5em); }
+.content-carousel figure:nth-child(4) { transform: rotateY(120deg) translate(4.5em); }
+.content-carousel figure:nth-child(5) { transform: rotateY(160deg) translate(4.5em); }
+.content-carousel figure:nth-child(6) { transform: rotateY(200deg) translate(4.5em); }
+.content-carousel figure:nth-child(7) { transform: rotateY(240deg) translate(4.5em); }
+.content-carousel figure:nth-child(8) { transform: rotateY(280deg) translate(4.5em); }
+.content-carousel figure:nth-child(9) { transform: rotateY(320deg) translate(4.5em); }
 
 
+.content-carousel img {
+  width: 100%;
+  transition: all 300ms;
+}
+
+.content-carousel img:hover {
+  transform: scale(1.2);
+  transition: all 300ms;
+}
+
+@keyframes rotate {
+  from{
+      transform: rotateY(0deg);
+  } to{
+      transform: rotateY(360deg);
+  }
+}
+
+@media screen and (min-width: 39.5em) {
+
+  .content-all {
+      width: 23em;
+      height: 11em;
+      top: 12em;
+      perspective: 62.5em;
+      margin: auto;
+      position: relative;
+      margin-top: 3.12em;
+  }
+
+  .icon-nav:hover {
+    transform: translateY(0.3em);
+  }
+
+  .content-carousel {
+      width: 100%;
+      position: absolute;
+      animation: rotate 50s infinite linear;
+      transform-style: preserve-3d;
+      cursor: pointer;
+  }
+
+  .content-carousel:hover {
+      /* animation-direction: reverse; */
+      animation-play-state: paused;
+  }
+
+  .content-carousel figure {
+      /* top: 9em; */
+      width: 100%;
+      height: 7.5em;
+      overflow: hidden;
+      position: absolute;
+      box-shadow: 0em 0em 1.25em 0em black;
+      transition: all 300ms;
+  }
+
+  .content-carousel figure:hover {
+      box-shadow: 0em 0em 0em black;
+      transition: all 300ms;
+  }
+
+  .content-carousel figure:nth-child(1) { transform: rotateY(0deg) translate(18.75em); }
+  .content-carousel figure:nth-child(2) { transform: rotateY(40deg) translate(18.75em); }
+  .content-carousel figure:nth-child(3) { transform: rotateY(80deg) translate(18.75em); }
+  .content-carousel figure:nth-child(4) { transform: rotateY(120deg) translate(18.75em); }
+  .content-carousel figure:nth-child(5) { transform: rotateY(160deg) translate(18.75em); }
+  .content-carousel figure:nth-child(6) { transform: rotateY(200deg) translate(18.75em); }
+  .content-carousel figure:nth-child(7) { transform: rotateY(240deg) translate(18.75em); }
+  .content-carousel figure:nth-child(8) { transform: rotateY(280deg) translate(18.75em); }
+  .content-carousel figure:nth-child(9) { transform: rotateY(320deg) translate(18.75em); }
 
 
+  .content-carousel img {
+      width: 100%;
+      transition: all 300ms;
+  }
 
+  .content-carousel img:hover {
+      transform: scale(1.2);
+      transition: all 300ms;
+  }
 
-
+  @keyframes rotate {
+      from{
+          transform: rotateY(0deg);
+      } to{
+          transform: rotateY(360deg);
+      }
+  }
+}
 
 .navbar {
     background-color: #5e6b7a;
