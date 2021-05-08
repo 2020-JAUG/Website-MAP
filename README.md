@@ -21,7 +21,7 @@
 
 ## Image
 
-![captura](img/websiteMAP.jpg)
+![captura](img/WebsiteMAP.jpg)
 
 # Coding 👨🏽‍💻
 | Hours worked | 6 Hours and half |
