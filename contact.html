@@ -52,11 +52,63 @@
       </div>
     </nav>
 
-    
+
+      <main>
+        <form action="" class="formulary" id="formulary">
+          <!-- Group name -->
+          <div class="formulary__group" id="group__name">
+            <label for="name" class="formulary__label">Name</label>
+                <div class="formulary__group-input">
+                    <input type="text" class="formulary__input" name="name" id="name" placeholder="Name">
+                    <i class="formulary__validation-state bi bi-check-circle"></i>
+                </div>
+                <p class="formulary__input-error">The name must be 4 at 12 digits and can only use Letters, numbers, screenplay and underscore</p>
+          </div>
+        <!-- Group lastname -->
+          <div class="formulary__group" id="group__lastName">
+            <label for="lastName" class="formulary__label">Last name</label>
+              <div class="formulary__group-input">
+                  <input type="text" class="formulary__input" name="lastName" id="lastName" placeholder="Last name">
+                  <i class="formulary__validation-state bi bi-x-circle"></i>
+              </div>
+              <p class="formulary__input-error">The last name must be 4 at 12 digits</p>
+        </div>
+          <!-- Group email -->
+        <div class="formulary__group" id="group__email">
+          <label for="email" class="formulary__label">Email</label>
+              <div class="formulary__group-input">
+                  <input type="email" class="formulary__input" name="email" id="email" placeholder="Email@.com">
+                  <i class="formulary__validation-state bi bi-times-circle"></i>
+              </div>
+              <p class="formulary__input-error">The email must be 4 at 12 digits and can only use numbers and letters and uppercase</p>
+        </div>
+          <!-- Group textarea -->
+          <div class="formulary__group" id="group__textarea">
+              <label for="textarea" class="formulary__label">Comments</label>
+                <div class="formulary__group-textarea">
+                    <textarea class="formulary__textarea" name="textarea" id="textarea" placeholder="Write your comment here"></textarea>
+                </div>
+          </div>
+          <!-- Group terms and Conditions -->
+          <div class="formulary__group" id="group__terms">
+              <label class="formulary__label">
+                <input class="formulary__checkbox" type="checkbox" name="terms" id="terms">
+                  I accept the terms and conditions
+              </label>
+          </div>
+
+          <div class="formulary__message" id="formulary__message">
+              <p><i class="bi bi-exclamation-triangle-fill"></i> <b>Error:</b> All fields are required</p>
+          </div>
+
+          <div class="formulary__group formulary__group-btn-send">
+              <button type="submit" class="formulary__btn">Send</button>
+              <p class="formulary__message-succes" id="formulary__message-succes">Submitted successfully</p>
+          </div>
+        </form>
+      </main>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-      crossorigin="anonymous"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"crossorigin="anonymous"
     ></script>
   </body>
 </html>
