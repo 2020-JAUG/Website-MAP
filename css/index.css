@@ -186,7 +186,7 @@ h1 span {
       z-index: 1;
       top: -1.5em;
       width: 27em;
-      left: -6.5em;
+      left: -6em;
     }
     div.box2 {
       font-size: 1em;
@@ -195,7 +195,7 @@ h1 span {
       display: flex;
       background-color: #455f74c2;
       width: 27em;
-      top: -2em;
+      top: -1.5em;
       z-index: 1;
       left: -14em;
     }
@@ -215,7 +215,7 @@ h1 span {
       left: 21em;
       /* left: -16em; */
       width: 27em;
-      top: -26em;
+      top: -25em;
     }
     body {
       overflow-y:hidden;
@@ -245,7 +245,7 @@ h1 span {
     /* left: 21em; */
     left: -16em;
     width: 27em;
-    top: -3em;
+    top: -1.5em;
   }
   .container-box {
     width: 120%;
