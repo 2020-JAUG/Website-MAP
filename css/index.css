@@ -37,7 +37,7 @@ h1 span {
     width: 0em;
     background-color: rgb(165, 165, 165);
     border-left: 0.0625em solid rgba(0, 0, 0, 0.096);
-    animation: machine 6s alternate steps(32);
+    animation: machine 3.5s alternate steps(32);
     /* animation: maquina 6s infinite alternate steps(32); */
 }
 
@@ -56,6 +56,8 @@ h1 span {
     margin-top: 6.25em;
     /* border: solid black; */
     width: 98vw;
+    max-width: 1000;
+
 }
 
 .container-box {
@@ -195,7 +197,7 @@ h1 span {
       width: 27em;
       top: -2em;
       z-index: 1;
-      left: -12em;
+      left: -14em;
     }
     .box:hover p {
       transform: translateY(7.24em);
@@ -211,6 +213,7 @@ h1 span {
       background-color: #455f74c2;
       z-index: 1;
       left: 21em;
+      /* left: -16em; */
       width: 27em;
       top: -26em;
     }
@@ -227,10 +230,27 @@ h1 span {
       top: 1em;
       right: -2em;
   }
+
 }
 
+@media screen and (min-width: 1442px) {
 
-
+  .box3 {
+    font-size: 1em;
+    margin-top: none;
+    position: relative;
+    display: flex;
+    background-color: #455f74c2;
+    z-index: 1;
+    /* left: 21em; */
+    left: -16em;
+    width: 27em;
+    top: -3em;
+  }
+  .container-box {
+    width: 120%;
+  }
+}
 
 .navbar {
     background-color: #5e6b7a;
