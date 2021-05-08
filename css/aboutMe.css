@@ -3,6 +3,38 @@ body {
     background-color: rgba(65, 53, 53, 0.447);
 }
 
+.content {
+    width: 90%;
+    max-width: 1000;
+    margin: 1em auto;
+    display: grid;
+    page-break-inside: 2em;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.container > .content,
+.container > .sidebar,
+.container > div {
+    padding: 20px;
+    border: 1px solid #1b1a1a;
+}
+
+.container > .content {
+    grid-column: span 3;
+    gap: 2em;
+}
+
+.content > article {
+    padding: 15px;
+    height: -20%;
+}
+
+.content .article h1,
+.content .article p {
+    padding: 35px;
+    color: #000000;
+}
+
 
 .icon-nav:hover {
     transform: translateY(0.3em);
