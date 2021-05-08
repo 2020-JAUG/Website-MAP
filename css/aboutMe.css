@@ -1,44 +1,50 @@
 
-body {
-    background-color: rgba(65, 53, 53, 0.447);
+@media screen and (max-width: 1768px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: rgba(65, 53, 53, 0.447);
+    }
+
+    h1 {
+        padding: 1em;
+        text-align: center;
+        font-size: 2.5em;
+        color: #a3501f;
+        text-transform: uppercase;
+    }
+
+    .container {
+        /* background: white; */
+        width: 90%;
+        max-width: 1000;
+        margin: 1.6em auto;
+        display: grid;
+        grid-template-rows: auto;
+    }
+
+    .container > .content,
+    .container > div {
+        padding: 1.5em;
+        border: 1px solid #1b1a1a;
+        box-shadow: 0em 0em  3em black;
+    }
+    .container .header {
+        grid-column: 1/0;
+        color: #000000;
+        /* background: #495c63; */
+    }
+
+    .content .article h1,
+    .content .article p {
+        padding: 0em;
+        color: #000000;
+    }
 }
-
-.content {
-    width: 90%;
-    max-width: 1000;
-    margin: 1em auto;
-    display: grid;
-    page-break-inside: 2em;
-    grid-template-columns: repeat(5, 1fr);
-}
-
-.container > .content,
-.container > .sidebar,
-.container > div {
-    padding: 20px;
-    border: 1px solid #1b1a1a;
-}
-
-.container > .content {
-    grid-column: span 3;
-    gap: 2em;
-}
-
-.content > article {
-    padding: 15px;
-    height: -20%;
-}
-
-.content .article h1,
-.content .article p {
-    padding: 35px;
-    color: #000000;
-}
-
-
-.icon-nav:hover {
-    transform: translateY(0.3em);
-  }
 
 .navbar {
     background-color: #5e6b7a;
