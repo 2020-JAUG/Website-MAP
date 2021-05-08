@@ -1,4 +1,13 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+
 @media screen and (max-width: 1768px) {
 
     * {
@@ -9,15 +18,6 @@
     body {
         background-color: rgba(65, 53, 53, 0.447);
     }
-
-    h1 {
-        padding: 1em;
-        text-align: center;
-        font-size: 2.5em;
-        color: #a3501f;
-        text-transform: uppercase;
-    }
-
     .container {
         /* background: white; */
         width: 90%;
@@ -29,20 +29,17 @@
 
     .container > .content,
     .container > div {
-        padding: 1.5em;
+        padding: 2.5em;
         border: 1px solid #1b1a1a;
         box-shadow: 0em 0em  3em black;
     }
-    .container .header {
-        grid-column: 1/0;
-        color: #000000;
-        /* background: #495c63; */
-    }
-
     .content .article h1,
     .content .article p {
         padding: 0em;
         color: #000000;
+    }
+    .content {
+        margin-top: 4em;
     }
 }
 
