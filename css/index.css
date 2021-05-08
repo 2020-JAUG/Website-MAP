@@ -255,11 +255,12 @@ h1 span {
   .navbar .navbar-nav .nav-link {
     color: rgba(2, 2, 2, 0.831);
     border-radius: .25rem;
-    margin: 0 0.25em;
+    /* margin: 0 0.25em; */
   }
   .navbar .navbar-nav .nav-link:not(.disabled):hover,
   .navbar .navbar-nav .nav-link:not(.disabled):focus {
     color: rgba(228, 131, 51, 0.892);
+
   }
   .navbar .navbar-nav .dropdown-menu {
     background-color: #5e6b7a;
