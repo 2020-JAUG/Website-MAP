@@ -219,6 +219,7 @@ h1 span {
     }
     body {
       overflow-y:hidden;
+      overflow-x:hidden;
     }
     h1 {
       left: 9em;
@@ -243,7 +244,7 @@ h1 span {
     background-color: #455f74c2;
     z-index: 1;
     /* left: 21em; */
-    left: -16em;
+    left: -22em;
     width: 27em;
     top: -1.5em;
   }
@@ -382,8 +383,6 @@ h1 span {
       color: #c8c3ce;
       background-color: #ebf1f4;
     }
-  }
-
   .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
     color: #ffffff;
   }
@@ -395,3 +394,4 @@ h1 span {
     color: #c8c3ce;
     background-color: #ebf1f4;
   }
+}
